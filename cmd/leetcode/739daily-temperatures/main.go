@@ -53,6 +53,7 @@ func dailyTemperaturesV3(temperatures []int) []int {
 	for i, v := range temperatures {
 
 		for len(stack) > 0 && v > temperatures[stack[len(stack)-1]] {
+			//大于就出栈 其他没有的就是0
 			result[stack[len(stack)-1]] = i - stack[len(stack)-1]
 			stack = stack[:len(stack)-1]
 		}
