@@ -1,4 +1,4 @@
-package main
+ package main
 
 func guess(num int) int {
 	return -1
