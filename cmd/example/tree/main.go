@@ -5,8 +5,8 @@ import (
 )
 
 type Node struct {
-	Val  int
-	Left *Node
+	Val   int
+	Left  *Node
 	Right *Node
 }
 
@@ -102,6 +102,8 @@ func findNode(node *Node, data int) *Node {
 	}
 	return nil
 }
+
+// 二叉树 插入
 func insertR(node *Node, data int) {
 	if node == nil {
 		return
