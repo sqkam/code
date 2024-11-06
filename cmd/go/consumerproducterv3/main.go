@@ -8,11 +8,11 @@ import (
 func main() {
 	ch := make(chan int, 10)
 	wg := sync.WaitGroup{}
-	productorCount := 2
+	producerCount := 2
 	consumerCount := 5
-	doneCh := make(chan int, productorCount)
+	doneCh := make(chan int, producerCount)
 
-	for range productorCount {
+	for range producerCount {
 		go func() {
 			for i := range 6 {
 				ch <- i
@@ -32,7 +32,7 @@ func main() {
 		}()
 	}
 
-	for range productorCount {
+	for range producerCount {
 		<-doneCh
 	}
 	close(ch)
