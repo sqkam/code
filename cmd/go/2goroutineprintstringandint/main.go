@@ -34,7 +34,7 @@ func main() {
 			if i < 'd' {
 				fmt.Printf("2 %c\n", i)
 			} else {
-				ch2 <- 0
+				ch1 <- 0
 				break
 			}
 			i += 1

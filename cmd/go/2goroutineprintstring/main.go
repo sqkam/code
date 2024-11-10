@@ -35,7 +35,7 @@ func main() {
 			if i < lenSBytes {
 				fmt.Printf("2 %c\n", sBytes[i])
 			} else {
-				ch2 <- 0
+				ch1 <- 0
 				break
 			}
 			i += 1
