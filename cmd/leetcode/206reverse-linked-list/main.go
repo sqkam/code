@@ -12,6 +12,7 @@ type ListNode struct {
 func main() {
 	l1 := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4}}}
 	kk := reverseList(l1)
+
 	fmt.Printf("%v\n", kk)
 }
 

@@ -5,10 +5,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func main() {
-
-}
-
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	newHead := &ListNode{Next: head}
 	fastp := newHead
