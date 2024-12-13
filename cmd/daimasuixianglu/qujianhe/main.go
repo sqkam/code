@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	total := 0
 	fmt.Scan(&total)
-	arr := make([]int, 0, total)
-	arrSum := make([]int, 0, total)
+	arr := make([]int, total)
+	arrSum := make([]int, total)
 	for i := range total {
 		fmt.Scan(&arr[i])
 	}
@@ -18,12 +18,13 @@ func main() {
 			arrSum[i] = arr[i]
 		}
 	}
+	fmt.Printf("%v\n", "")
 	for {
 		a, b := 0, 0
 		fmt.Scan(&a, &b)
-		if a==0 {
+		if a == 0 {
 			fmt.Printf("%v\n", arrSum[b])
-		}else {
+		} else {
 			fmt.Printf("%v\n", arrSum[b]-arrSum[a-1])
 		}
 
