@@ -11,7 +11,7 @@ func main() {
 	l1 := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4}}}
 	l2 := &ListNode{Val: 1, Next: &ListNode{Val: 3}}
 	kk := addTwoNumbers(l1, l2)
-	fmt.Printf("%v\n", kk)
+	fmt.Printf("12341234%v\n", kk)
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
